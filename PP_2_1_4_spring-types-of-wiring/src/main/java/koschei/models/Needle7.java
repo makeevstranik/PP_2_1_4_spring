@@ -1,11 +1,13 @@
 package koschei.models;
 
-public class Needle7 {
-    Deth8 deth;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
-    public Needle7(Deth8 deth) {
-        this.deth = deth;
-    }
+@Component
+public class Needle7 {
+
+    @Autowired
+    Deth8 deth;
 
     @Override
     public String toString() {
